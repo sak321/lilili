@@ -376,7 +376,6 @@ python3 main.py
 | 参数 | 类型 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- |
 | `IP_CALIBRATION_ENABLED` | `boolean` | `false` | 是否启用 IP 地区校准（基于 ipinfo.io） |
-| `IP_CALIBRATION_CONCURRENCY` | `int` | `300` | 地区校准的异步并发数 |
 | `IP_CALIBRATION_MIN_INTERVAL` | `float` | `0.1` | 请求最小间隔（秒） |
 | `IP_CALIBRATION_TOKEN_FILE` | `string` | `"valid_tokens.txt"` | ipinfo.io Token 文件名 |
 | `IP_CALIBRATION_CACHE_FILE` | `string` | `"ipinfo_cache.txt"` | 校准结果缓存文件名 |
@@ -436,6 +435,7 @@ python3 main.py
 
 | 参数 | 类型 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- |
+| `IP_CALIBRATION_CONCURRENCY` | `int` | `300` | 地区校准的异步并发数 |
 | `MAX_WORKERS` | `int` | `300` | TCP 并发测试最大线程数 |
 | `AVAILABILITY_WORKERS` | `int` | `32` | 可用性检测并发数 |
 | `FALLBACK_WORKERS` | `int` | `32` | 备用国家查询的并发线程数（当标签无法识别时自动调用可用性API查询国家） |
